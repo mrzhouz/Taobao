@@ -27,5 +27,5 @@
 		SearchComment searchComment = new SearchComment();
 		List<String> commList = searchComment.findId("小红书",size)
 
-过程中可能会因为太频繁请求，导致没有数据返回，不懂淘宝是怎么识别的
-本人频繁操作出现过连打开网页看评论都需要登录
+过程中可能会因为太频繁请求，会出现访问验证导致没有数据返回，不懂淘宝是怎么识别的
+本人频繁操作出现过连打开网页看评论都访问验证
