@@ -21,7 +21,9 @@
 				System.out.println("暂无评论");
 			}
 		}
+		
 需要多条评论
+
 		SearchComment searchComment = new SearchComment();
 		List<String> commList = searchComment.findId("小红书",size)
 
