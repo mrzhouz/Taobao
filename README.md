@@ -2,15 +2,19 @@
 淘宝评论爬虫 公司需要抓淘宝评论，就写了个简单的抓取
 只需要输入搜索商品关键词，这里会返回网页搜索结果(按销量排序 保证较多评论)
 第一页的所有商品的评论的json字符串，默认每个商品20条
-SearchComment searchComment = new SearchComment();
-List<String> commList = searchComment.findId("小红书");
-for (String str : commList) {
+
+
+
+		SearchComment searchComment = new SearchComment();
+		List<String> commList = searchComment.findId("小红书");
+		for (String str : commList) {
 			System.out.println(str);
 			JSONObject parseObject = JSONObject.parseObject(str);
 			JSONArray jsonArray = parseObject.getJSONArray("comments");
 
 			if (jsonArray.size() > 0) {
 				for (int j = 0; j < jsonArray.size(); j++) {
+
 					System.out.println(jsonArray.getJSONObject(j).getString("content"));
 				}
 			} else {
