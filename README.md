@@ -22,7 +22,7 @@
 			}
 		}
 需要多条评论
-List<String> commList = searchComment.findId("小红书",size);
+	List<String> commList = searchComment.findId("小红书",size);
 
 过程中可能会因为太频繁请求，导致没有数据返回，不懂淘宝是怎么识别的
 本人频繁操作出现过连打开网页看评论都需要登录
